@@ -11,3 +11,13 @@ Key concepts
 - We cannot use shadowed variables within a loop, each loop can be considered as its own scope, cannot stack. But we can still update the value inside mutable variables.
 - Mutable variables cannot change type from str to integer.
 
+Datatypes
+- floats f64, f32
+- simple arithmatic such as +-/* , nothing new with floats and integers.
+- Copy paste how to print the type of a variable: https://www.includehelp.com/rust/print-the-type-of-variables.aspx , by default the value will be assigned a i32, if divisible, else a f64.
+- bool is pretty standard,
+- char is declared with single quotes, as it can fit anything that is 4 bytes in size, it can accept more than ASCII.
+- string literals can be considered as a vector of char.
+- Tuples has a fixed length that cannot be changed. Each position in tuple has a type that obeys the same mutability in 3.1, require to declare mutable tuple to change the values.
+- Array must have the same type through elements.
+- Array useful for stack allocation instead of heap, where the length of array is fixed. If unsure, use vector.
